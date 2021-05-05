@@ -13,12 +13,14 @@ class QuizActivity : AppCompatActivity() {
         setContentView(R.layout.activity_quiz)
     }
     fun clickDisplayCorrectToast(view: View?) { // Toast.makeText(this, R.string.correct_toast, Toast.LENGTH_SHORT).show();
-        val intent = Intent(this, ActivityTest::class.java)
-        startActivity(intent)
+        Toast.makeText(this, R.string.correct_toast, Toast.LENGTH_SHORT).show()
+        /*val intent = Intent(this, ActivityTest::class.java)
+        startActivity(intent)*/
     }
 
     fun clickDisplayIncorrectToast(view: View?) {
         Toast.makeText(this, R.string.incorrect_toast, Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, R.string.incorrect_toast, Toast.LENGTH_SHORT).show()
     }
 
     fun onStart(s: String?) {
